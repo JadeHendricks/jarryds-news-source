@@ -13,6 +13,7 @@ html {
 
 body {
     box-sizing: border-box;
+    padding-top: 121.2px;
 }
 
 .container {
@@ -43,6 +44,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    body {
+        padding-top: 185px;
+    }
     .about {
         &__card {
             margin-top: 2.5rem;
@@ -59,6 +63,9 @@ body {
 }
 
 @media screen and (max-width: 520px) {
+    body {
+        padding-top: 205px;
+    }
     .about {
         &__title {
             font-size: 2rem; 
