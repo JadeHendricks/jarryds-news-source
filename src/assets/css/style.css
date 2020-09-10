@@ -262,7 +262,14 @@ strong {
 
 .article {
   border: 0.1rem solid #e6e6e6;
-  padding: 2.5rem 0 4rem 0; }
+  padding: 2.5rem 0 4rem 0;
+  position: relative; }
+  .article > a {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    color: #1ac7c3;
+    font-size: 1.6rem; }
   .article__wrapper {
     padding: 0 3rem; }
   .article__type {
@@ -288,9 +295,18 @@ strong {
 
 .article-small {
   border: 0.1rem solid #e6e6e6;
-  border-left: 0; }
+  border-left: 0;
+  border-bottom: 0;
+  position: relative; }
   .article-small:nth-child(even) {
     background-color: #f4f4f4; }
+  .article-small:last-child {
+    border-bottom: 0.1rem solid #e6e6e6; }
+  .article-small > a {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.8rem;
+    color: #1ac7c3; }
   .article-small__wrapper {
     padding: 2rem;
     display: flex; }
@@ -307,7 +323,7 @@ strong {
   .article-small__intro {
     color: #282828;
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.2;
     margin: .5rem 0; }
   .article-small__description {
