@@ -1,0 +1,33 @@
+.submenu {
+    border: 0.1rem solid $grey;
+    background-color: $light-grey;
+    padding: 2rem 0;
+    &__wrapper {
+
+    }
+    &__ul {
+        display: flex;
+        list-style-type: none;
+    }
+    &__li {
+        margin-right: 3rem;
+        font-size: 1.6rem;
+        &:first-child {
+            color: $black;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: $text-grey;
+        &:hover {
+            transition: all 0.4s;
+            color: $light-blue;
+        }
+        &.active {
+            color: $light-blue;
+        }
+    }
+}
