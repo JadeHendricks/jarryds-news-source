@@ -45,3 +45,26 @@
         color: $light-blue;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .header {
+        padding: 1.5rem 0;
+        &__wrapper {
+            display: block;
+        }
+        &__title {
+            font-size: 1.6rem;
+        }
+        &__selectWrapper {
+            flex: 1;
+            margin: 0;
+        }
+        &__select {
+            padding-left: 0.5rem;
+            margin: 1rem 0 1.5rem 0;
+        }
+        &__li {
+            font-size: 1.4rem;
+        }
+    }
+}
