@@ -21,3 +21,22 @@ body {
     margin: 0 auto;
     display: block;
 }
+
+.about {
+    &__card {
+        border: 0.1rem solid $grey;
+        margin-top: 5rem;
+        padding: 2.5rem;
+    }
+    &__title {
+        margin-bottom: 1.5rem;
+        font-size: 3.2rem; 
+    }
+    &__description {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+        &:last-child {
+            margin-bottom: 0; 
+        }
+    }
+}

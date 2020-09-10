@@ -8,13 +8,13 @@
         align-items: center;
     }
     &__title {
-        font-size: 3.2rem;
+        font-size: 2rem;
         text-transform: uppercase;
         color: $text-grey;
     }
     &__selectWrapper {
         flex: 1;
-        margin: 0 5rem;
+        margin: 0 3rem;
     }
     &__select {
         width: 100%;
