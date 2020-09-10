@@ -28,3 +28,19 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .submenu {
+        padding: 1.5rem 0;
+        &__ul {
+            display: flex;
+            list-style-type: none;
+            flex-wrap: wrap;
+        }
+        &__li {
+            margin-right: 1.2rem;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+        }
+    }
+}

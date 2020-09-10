@@ -387,6 +387,18 @@ strong {
     .submenu__link.active {
       color: #1ac7c3; }
 
+@media screen and (max-width: 767px) {
+  .submenu {
+    padding: 1.5rem 0; }
+    .submenu__ul {
+      display: flex;
+      list-style-type: none;
+      flex-wrap: wrap; }
+    .submenu__li {
+      margin-right: 1.2rem;
+      font-size: 1.2rem;
+      padding: 0.5rem; } }
+
 .header {
   background-color: #282828;
   color: #ffffff;
@@ -447,3 +459,9 @@ strong {
   text-align: center;
   font-size: 1.6rem;
   margin-top: 10rem; }
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 2rem 0;
+    font-size: 1.4rem;
+    margin-top: 4rem; } }

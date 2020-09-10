@@ -6,3 +6,11 @@
     font-size: 1.6rem;
     margin-top: 10rem;
 }
+
+@media screen and (max-width: 767px) {
+    .footer {
+        padding: 2rem 0;
+        font-size: 1.4rem;
+        margin-top: 4rem;
+    }
+}
