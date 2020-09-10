@@ -1,0 +1,47 @@
+.header {
+    background-color: $black;
+    color: $white;
+    padding: 1.5rem 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        color: $text-grey;
+    }
+    &__selectWrapper {
+        flex: 1;
+        margin: 0 5rem;
+    }
+    &__select {
+        width: 100%;
+        height: 3rem;
+        padding-left: 1rem;
+        font-size: 1.4rem;
+    }
+    &__ul {
+        display: flex;
+        list-style-type: none;
+    }
+    &__li {
+        font-size: 1.6rem;
+        margin-right: 2rem;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link {
+        color: $light-grey;
+        text-decoration: none;
+        &:hover {
+            transition: all .4s;
+            color: $light-blue;
+        }
+    }
+    &__link.active {
+        color: $light-blue;
+    }
+}
