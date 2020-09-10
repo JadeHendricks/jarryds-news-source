@@ -25,7 +25,7 @@ body {
 .about {
     &__card {
         border: 0.1rem solid $grey;
-        margin-top: 5rem;
+        margin-top: 4rem;
         padding: 2.5rem;
     }
     &__title {
@@ -35,8 +35,33 @@ body {
     &__description {
         font-size: 1.6rem;
         margin-bottom: 1.5rem;
+        color: $text-grey;
         &:last-child {
             margin-bottom: 0; 
         }
     }
+}
+
+@media screen and (max-width: 767px) {
+    .about {
+        &__card {
+            margin-top: 2.5rem;
+            padding: 2rem;
+        }
+        &__title {
+            margin-bottom: 1rem;
+            font-size: 2.6rem; 
+        }
+        &__description {
+            font-size: 1.4rem;
+        }
+    }      
+}
+
+@media screen and (max-width: 520px) {
+    .about {
+        &__title {
+            font-size: 2rem; 
+        }
+    }      
 }
