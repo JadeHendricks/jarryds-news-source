@@ -13,8 +13,8 @@
     }
     &__title {
         font-size: 2rem;
-        text-transform: uppercase;
         color: $text-grey;
+        text-decoration: none;
     }
     &__selectWrapper {
         flex: 1;

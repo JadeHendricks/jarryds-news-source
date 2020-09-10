@@ -32,7 +32,6 @@
     &__intro {
         font-size: 2.4rem;
         margin: 1rem 0 2.5rem 0;
-        text-transform: uppercase;
     }
     &__imageContainer {
         width: 100%;
@@ -174,7 +173,6 @@
     }
     &__intro {
         color: $black;
-        text-transform: uppercase;
         font-size: 1.4rem;
         line-height: 1.2;
         margin: .5rem 0;
@@ -225,7 +223,6 @@
         }
         &__intro {
             color: $black;
-            text-transform: uppercase;
             font-size: 1.2rem;
             line-height: 1.2;
             margin: .5rem 0;
