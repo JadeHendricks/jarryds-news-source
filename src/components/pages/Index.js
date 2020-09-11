@@ -1,22 +1,25 @@
-import React from 'react';
+import React, { useEffect, useContext } from 'react';
 import Article from '../articles/Article';
 import ArticleSmall from '../articles/ArticleSmall';
+import BaseContext from "../../context/base/BaseContext";
 
 const Index = () => {
+
+    const { getHeadlines, headLines, currentCategory } = useContext(BaseContext);
+
+    useEffect(() => {
+        getHeadlines(currentCategory);
+    }, [])
+
     return (
         <section className="articles">
             <div className="container">
                 <div className="articles__wrapper">
                     <div className="articles__left">
-                        <Article />
-                        <Article />
-                        <Article />
+                        { headLines &&  headLines.slice(0, 8).map(headline => <Article key={ Math.random() * 10000 } headline={ headline }/>)}
                     </div>
                     <div className="articles__right">
-                        <ArticleSmall />
-                        <ArticleSmall />
-                        <ArticleSmall />
-                        <ArticleSmall />
+                        { headLines &&  headLines.slice(8, 20).map(headline => <ArticleSmall key={ Math.random() * 10000 } headline={ headline }/>)}
                     </div>
                 </div>
             </div>

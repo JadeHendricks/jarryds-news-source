@@ -1,20 +1,21 @@
 import React from 'react';
+import Moment from 'react-moment';
 
-const ArticleSmall = () => {
+const ArticleSmall = ({ headline: { title, description, publishedAt, source, url, urlToImage } }) => {
     return (
         <div className="article-small">
-            <a href="">See more</a>
             <div className="article-small__wrapper">
                 <div className="article-small__imageContainer">
-                    <img src="./images/1.jpg" alt="" className="article-small__image" />
+                    <img src={ urlToImage ? urlToImage : 'https://www.brdtex.com/wp-content/uploads/2019/09/no-image-480x480.png' } alt={ title } className="article-small__image" />
                 </div>
                 <div className="article-small__contentContainer">
-                    <h5 className="article-small__type">Software</h5>
-                    <h3 className="article-small__intro">Lorem ipsum dolor sit amet consectetur.</h3>
-                    <p className="article-small__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <span className="article-small__date">14 September 2020</span>
+                    <h5 className="article-small__type">{ source?.name }</h5>
+                    <h3 className="article-small__intro">{ title }</h3>
+                    <p className="article-small__description">{ description }</p>
+                    <span className="article-small__date">Published on:<Moment format="DD/MM/YYYY">{ publishedAt }</Moment></span>
                 </div>
             </div>
+            <a href={ url } target="_blank">See more</a>
         </div>
     )
 }

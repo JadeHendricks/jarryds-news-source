@@ -6,10 +6,12 @@ import Navigation from './components/layouts/Navigation';
 import Footer from './components/layouts/Footer';
 import Index from './components/pages/Index';
 import About from './components/pages/About';
+import BaseState from './context/base/BaseState';
 
 function App() {
   return (
     <div className="App">
+      <BaseState>
         <Router>
           <Header />
           <Navigation />
@@ -21,6 +23,7 @@ function App() {
           </main>
           <Footer />
         </Router>
+      </BaseState>
     </div>
   );
 }

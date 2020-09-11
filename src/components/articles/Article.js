@@ -1,23 +1,22 @@
 import React from 'react';
+import Moment from 'react-moment';
 
-const Article = () => {
+const Article = ({ headline: { title, description, publishedAt, source, url, urlToImage } }) => {
     return (
         <div className="article">
             <div className="article__wrapper">
-                <h5 className="article__type">Software</h5>
-                <h3 className="article__intro">DeltaMaker – The new kid on the block An Elegant 3D Printer and a new wicked ass thing</h3>
+                <h5 className="article__type">{ source?.name }</h5>
+                <h3 className="article__intro">{ title }</h3>
             </div>
             <div className="article__imageContainer">
-                <img className="article__image" src="./images/Konstructs_03.jpg" alt="image" />
+                <img className="article__image" src={ urlToImage ? urlToImage : 'https://www.brdtex.com/wp-content/uploads/2019/09/no-image-480x480.png' } alt={ title } title={ title } />
             </div>
             <div className="article__wrapper">
-                <p className="article__description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam quos, in accusamus ullam earum facere quo suscipit accusantium eos ratione incidunt, 
-                    natus minus maxime fugit provident id repellat officia esse commodi error ipsum? Cupiditate reprehenderit fugiat eos ut autem deleniti perferendis 
-                    quisquam voluptatibus aliquid delectus rerum, mollitia, natus iure voluptas?
-                </p>
+            <p className="article__description">{ description }</p>
+            <br />
+            <p>Published on: <Moment format="DD/MM/YYYY">{ publishedAt }</Moment></p>
             </div>
-            <a href="#">See more</a>
+            <a href={ url } target="_blank">See more</a>
         </div>
     )
 }
