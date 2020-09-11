@@ -16,7 +16,7 @@ const Article = ({ headline: { title, description, publishedAt, source, url, url
             <br />
             <p>Published on: <Moment format="DD/MM/YYYY">{ publishedAt }</Moment></p>
             </div>
-            <a href={ url } target="_blank">See more</a>
+            <a href={ url } target="_blank" rel="noopener noreferrer">See more</a>
         </div>
     )
 }

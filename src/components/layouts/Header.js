@@ -6,7 +6,7 @@ const Header = () => {
         <header className="header">
             <div className="container">
                 <div className="header__wrapper">
-                    <Link to="/" className="header__title">Jarryds News Spot</Link>
+                    <Link to="/" className="header__title">Jarryd's News Spot</Link>
                     <div className="header__selectWrapper">
                         <select className="header__select">
                             <option value="ZA">South Africa</option>

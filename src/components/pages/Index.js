@@ -9,6 +9,7 @@ const Index = () => {
 
     useEffect(() => {
         getHeadlines(currentCategory);
+        // eslint-disable-next-line
     }, [])
 
     return (

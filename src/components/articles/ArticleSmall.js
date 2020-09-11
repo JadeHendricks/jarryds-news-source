@@ -15,7 +15,7 @@ const ArticleSmall = ({ headline: { title, description, publishedAt, source, url
                     <span className="article-small__date">Published on:<Moment format="DD/MM/YYYY">{ publishedAt }</Moment></span>
                 </div>
             </div>
-            <a href={ url } target="_blank">See more</a>
+            <a href={ url } target="_blank" rel="noopener noreferrer">See more</a>
         </div>
     )
 }

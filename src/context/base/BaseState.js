@@ -15,7 +15,6 @@ const BaseState = props => {
   const [state, dispatch] = useReducer(BaseReducer, initialState);
 
   const getHeadlines = async (category) => {
-      console.log(category);
     const response = await axios.get(`http://newsapi.org/v2/top-headlines?country=za&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`);
     dispatch({
         type: GET_HEADLINES,
@@ -25,7 +24,6 @@ const BaseState = props => {
         type: SET_CATEGORY,
         payload: category
     });
-    console.log(category);
   }
 
   return (
