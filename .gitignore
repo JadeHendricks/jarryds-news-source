@@ -2,6 +2,8 @@
 
 # dependencies
 /src/assets/psd/
+/src/assets/css/
+/src/assets/images/
 /src/assets/node_modules/
 /node_modules
 /.pnp
@@ -19,6 +21,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
 npm-debug.log*
 yarn-debug.log*
